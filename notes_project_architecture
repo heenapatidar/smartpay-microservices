@@ -1,0 +1,21 @@
+smartpay/
+├── api-gateway/
+├── eureka-server/
+├── customer-service/
+│   └── resources/db/migration/V1__init_schema.sql
+├── account-service/
+│   └── resources/db/migration/V1__init_schema.sql
+├── payment-service/
+│   └── resources/db/migration/V1__init_schema.sql
+-----------------------------------------------------------------
+Flyway is a database migration tool.
+It helps you:
+Apply changes to the database automatically
+Keep track of which migrations are already applied
+Maintain consistent schema across environments (dev, QA, prod)
+Store all changes in version-controlled SQL files inside your project
+------------------------------------------------------------------------
+| Role          | Who Does What?                                           |
+| ------------- | -------------------------------------------------------- |
+| **Flyway**    | Handles **schema creation & versioning** using SQL files |
+| **Hibernate** | Handles **data interaction** (via entities, JPA)         |

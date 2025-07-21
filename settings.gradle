@@ -1,0 +1,6 @@
+rootProject.name = 'smartpay'
+include 'eureka'
+include 'gateway'
+include 'customer'
+include 'account'
+include 'payment'
